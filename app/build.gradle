@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+def FORECASTIO_KEY = '"' + forecastIoApiKey + '"' ?: '"Define forecast.io API key"';
+android.buildTypes.each { type ->
+    type.buildConfigField 'String', 'FORECASTIO_KEY', FORECASTIO_KEY
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
