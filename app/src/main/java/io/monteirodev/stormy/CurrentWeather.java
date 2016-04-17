@@ -108,6 +108,10 @@ public class CurrentWeather {
         return (int) Math.round(mTemperature);
     }
 
+    public int getTemperatureInCelcious() {
+        return (int) Math.round(((mTemperature - 32)*5)/9);
+    }
+
     public void setTemperature(double temperature) {
         mTemperature = temperature;
     }

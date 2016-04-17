@@ -20,7 +20,7 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/white"
-        android:textSize="150sp"/>
+        android:textSize="120sp"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
         android:layout_toRightOf="@+id/temperatureLabel"
         android:layout_toEndOf="@+id/temperatureLabel"
         android:src="@drawable/degree"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="Degrees"/>
 
     <TextView

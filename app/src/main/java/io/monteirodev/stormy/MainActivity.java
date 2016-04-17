@@ -139,8 +139,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateDisplay() {
-        mTemperatureLabel.setText(mCurrentWeather.getTemperature() + "");
-        mTimeLabel.setText("At " + mCurrentWeather.getFormattedTime() + " it will be");
+        mTemperatureLabel.setText(mCurrentWeather.getTemperatureInCelcious() + "");
+        mTimeLabel.setText(mCurrentWeather.getFormattedTime());
         mHumidityValue.setText(mCurrentWeather.getHumidity() + "");
         mPrecipValue.setText(mCurrentWeather.getPrecipChance() + " %");
         mSummaryLabel.setText(mCurrentWeather.getSummary());
