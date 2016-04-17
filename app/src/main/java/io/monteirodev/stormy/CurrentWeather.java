@@ -2,6 +2,7 @@ package io.monteirodev.stormy;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
 
 public class CurrentWeather {
@@ -42,6 +43,9 @@ public class CurrentWeather {
             case "fog":
                 iconId = R.drawable.fog;
                 break;
+            case "sunny":
+                iconId = R.drawable.sunny;
+                break;
             case "cloudy":
                 iconId = R.drawable.cloudy;
                 break;
@@ -64,7 +68,7 @@ public class CurrentWeather {
         return mTime;
     }
     public String getFormattedTime() {
-        SimpleDateFormat formatter = new SimpleDateFormat("h:mm a");
+        SimpleDateFormat formatter = new SimpleDateFormat("h:mm a", Locale.UK);
         formatter.setTimeZone(TimeZone.getTimeZone(getTimeZone()));
         Date dateTime = new Date(getTime() * 1000);
 

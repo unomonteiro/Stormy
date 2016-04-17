@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="io.monteirodev.stormy.MainActivity"
-    android:background="@color/myOrange">
+    android:background="@color/myOrange"
+    android:contentDescription="@string/degree_symbol">
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +30,8 @@
         android:layout_toRightOf="@+id/temperatureLabel"
         android:layout_toEndOf="@+id/temperatureLabel"
         android:src="@drawable/degree"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:contentDescription="Degrees"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,7 +61,8 @@
         android:layout_alignBottom="@+id/locationLabel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/cloudy_night"/>
+        android:src="@drawable/cloudy_night"
+        android:contentDescription="weather icon"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -139,7 +142,8 @@
         android:id="@+id/refreshImageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/refresh"/>
+        android:src="@drawable/refresh"
+        android:contentDescription="Refresh"/>
 
     <ProgressBar
         android:layout_width="wrap_content"
