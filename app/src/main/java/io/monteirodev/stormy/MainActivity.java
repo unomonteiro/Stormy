@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         mProgressBar.setVisibility(View.INVISIBLE);
 
         // Alcatraz Island, CA (37.8267,-122.423)
+        // Trofa, PT (41.339104, -8.549786)
         // Newcastle Upon Tyne
         final double latitude = 54.9778;
         final double longitude = -1.6129;
