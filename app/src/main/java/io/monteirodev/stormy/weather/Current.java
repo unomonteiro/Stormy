@@ -1,11 +1,13 @@
-package io.monteirodev.stormy;
+package io.monteirodev.stormy.weather;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
-public class CurrentWeather {
+import io.monteirodev.stormy.R;
+
+public class Current {
     private String mIcon;
     private long mTime;
     private double mHumidity;

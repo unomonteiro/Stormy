@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>-->
     <color name="myOrange">#fc970b</color>
     <color name="white_50">#80ffffff</color>
+    <color name="white_25">#40ffffff</color>
 </resources>
