@@ -186,7 +186,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="7 DAY"
+            android:text="DAILY"
             android:id="@+id/dailyButton"
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
