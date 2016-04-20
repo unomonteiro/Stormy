@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Alcatraz Island, CA (37.8267,-122.423)
         // Trofa, PT (41.339104, -8.549786)
-        // Newcastle Upon Tyne (54.9778, -1.6129)
+        // Newcastle Upon Tyne, UK (54.9778, -1.6129)
         final double latitude = 54.9778;
         final double longitude = -1.6129;
 
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         getForecast(latitude,longitude);
-        Log.d(TAG,"Main UI code is running!");
+        Log.d(TAG, "Main UI code is running!");
     }
 
     private void getForecast(double latitude, double longitude) {

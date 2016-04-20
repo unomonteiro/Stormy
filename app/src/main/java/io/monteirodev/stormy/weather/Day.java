@@ -33,12 +33,12 @@ public class Day implements Parcelable {
     }
 
     public int getTemperatureMax() {
-        return (int) Math.round(mTemperatureMax);
-    }
-
-    public int getTemperatureMaxInCelcious() {
         return (int) Math.round(((mTemperatureMax - 32)*5)/9);
     }
+
+    /*public int getTemperatureMaxInCelcious() {
+        return (int) Math.round(((mTemperatureMax - 32)*5)/9);
+    }*/
 
     public void setTemperatureMax(double temperatureMax) {
         mTemperatureMax = temperatureMax;
