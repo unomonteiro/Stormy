@@ -38,8 +38,9 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = MainActivity.class.getSimpleName();
+    public static final String TAG = MainActivity.class.getSimpleName();
     public static final String DAILY_FORECAST = "DAILY_FORECAST";
+    public static final String HOURLY_FORECAST = "HOURLY_FORECAST";
     Forecast mForecast;
 
 
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Alcatraz Island, CA (37.8267,-122.423)
         // Trofa, PT (41.339104, -8.549786)
-        // Newcastle Upon Tyne
+        // Newcastle Upon Tyne (54.9778, -1.6129)
         final double latitude = 54.9778;
         final double longitude = -1.6129;
 
@@ -265,4 +266,12 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(DAILY_FORECAST, mForecast.getDailyForecast());
         startActivity(intent);
     }
+
+    @OnClick (R.id.hourlyButton)
+    public void startHourlyActivity(View view) {
+        Intent intent = new Intent(this, HourlyForecastActivity.class);
+        intent.putExtra(HOURLY_FORECAST, mForecast.getHourlyForecast());
+        startActivity(intent);
+    }
+
 }
