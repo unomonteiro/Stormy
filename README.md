@@ -18,3 +18,5 @@ Using a DialogFragment
 Butter-knife
 Layouts: Relative, Linear and Layout Weight
 ProgressBar
+
+Use of ListView and RecycleView
