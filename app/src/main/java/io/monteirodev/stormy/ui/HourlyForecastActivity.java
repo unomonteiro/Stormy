@@ -20,12 +20,13 @@ public class HourlyForecastActivity extends AppCompatActivity {
     private Hour[] mHours;
 
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hourly_forecast);
         ButterKnife.bind(this);
-
+        // Parcelable
         Intent intent = getIntent();
         Parcelable[] parcelables = intent.getParcelableArrayExtra(MainActivity.HOURLY_FORECAST);
         mHours = Arrays.copyOf(parcelables, parcelables.length, Hour[].class);

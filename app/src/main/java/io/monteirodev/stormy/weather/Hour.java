@@ -68,11 +68,13 @@ public class Hour implements Parcelable{
         return formatter.format(date);
     }
 
+    // Parcelable
     @Override
     public int describeContents() {
         return 0; // not used
     }
 
+    // Parcelable
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeLong(mTime);
@@ -82,6 +84,7 @@ public class Hour implements Parcelable{
         dest.writeString(mTimezone);
     }
 
+    // Parcelable
     private Hour(Parcel in){
         mTime = in.readLong();
         mTemperature = in.readDouble();
@@ -90,6 +93,7 @@ public class Hour implements Parcelable{
         mTimezone = in.readString();
     }
 
+    // Parcelable
     public static final Creator<Hour> CREATOR = new Creator<Hour>() {
         @Override
         public Hour createFromParcel(Parcel source) {
